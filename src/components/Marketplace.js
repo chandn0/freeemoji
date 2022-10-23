@@ -4,6 +4,7 @@ import MarketplaceJSON from "../Marketplace.json";
 import axios from "axios";
 import { useState } from "react";
 import loading from '../loading.jpeg';
+import "../App.css";
 export default function Marketplace() {
     const sampleData = [
         {
@@ -60,8 +61,34 @@ export default function Marketplace() {
         <div>
             <Navbar></Navbar>
             <div className="flex flex-col place-items-center mt-20">
+                <div className="md:text-xl font-bold text-white align-middle content-start justify-center">
+                    Create Emojis using following tools and upload them
+                    <br />
+                    to get ownership.
+                    {/* <link>https://filmora.wondershare.com/animated-video/best-emoji-maker-to-create-emoji.html#emoji%20maker1</link> */}
+                    <br />
+                    <br />
+
+                    <ol>
+                        <li>  <a href="https://emoji-maker.com/" target="_blank" className="box" >Emoji-maker</a>  </li>
+                        <br />
+
+                        <li><a href="https://www.pizap.com/emoji_maker" target="_blank" className="box" >pizap</a></li>
+                        <br />
+
+                        <li><a href="https://emoji-maker.flat-icons.com/" target="_blank" className="box" >Falt-emojs</a></li>
+                        <br />
+
+                        <li><a href="https://labeley.com/emojis" target="_blank" className="box">labeley</a></li>
+                        <br />
+
+                        <li><a href="https://emoji-maker.com/" target="_blank" className="box" >Emoji-maker</a></li>
+                        <br />
+
+                    </ol>
+                </div>
                 <div className="md:text-xl font-bold text-white">
-                    Top emojis
+                    Emojis created by our users
                 </div>
                 <div className="flex mt-5 justify-between flex-wrap max-w-screen-xl text-center">
                     {data.map((value, index) => {

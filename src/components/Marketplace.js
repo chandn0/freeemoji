@@ -60,7 +60,10 @@ export default function Marketplace() {
     return (
         <div>
             <Navbar></Navbar>
+            <div class="iframeContainer">
+            </div>
             <div className="flex flex-col place-items-center mt-20">
+
                 <div className="md:text-xl font-bold text-white align-middle content-start justify-center">
                     Create Emojis using following tools and upload them
                     <br />
@@ -70,6 +73,8 @@ export default function Marketplace() {
                     <br />
 
                     <ol>
+                        <li>  <a href="https://replicate.com/stability-ai/stable-diffusion" target="_blank" className="box" >Generated-AI</a>  </li>
+                        <br />
                         <li>  <a href="https://emoji-maker.com/" target="_blank" className="box" >Emoji-maker</a>  </li>
                         <br />
 
